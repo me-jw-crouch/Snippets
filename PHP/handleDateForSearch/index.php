@@ -20,7 +20,7 @@ $errors = $_SESSION['errors'] ?? [];
     <label for="year">Year:</label>
     <select name="year" id="year">
         <?php
-        for ($year = (int) date("Y"); $year >= 1920; $year--) {
+        for ($year = (int) date("Y"); $year >= 2020; $year--) {
             echo "<option value='$year'>$year</option>";
         }
         ?>
